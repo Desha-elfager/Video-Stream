@@ -437,5 +437,5 @@ async def vstream(c: Client, m: Message):
                 except Exception as ep:
                     await loser.delete()
                     await m.reply_text(f"🚫 error: `{ep}`")
-🚫 error: `{ep}`")
-🚫 error: `{ep}`")
+
+
