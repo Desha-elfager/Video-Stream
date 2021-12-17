@@ -1,4 +1,4 @@
-<p align="center"><a href="https://t.me/VeezVideoBot"><img src="https://github.com/levina-lab/video-stream/raw/main/driver/veezlogo.png"></a></p>
+<p align="center"><a href="https://t.me/DESHA_MUSIC1_BOT"><img src="https://github.com/levina-lab/video-stream/raw/main/driver/veezlogo.png"></a></p>
 <p align="center">
     <br><b>Video Stream is an Advanced Telegram Bot that's allow you to play Video & Music on Telegram Group Video Chat</b><br>
 </p>
@@ -18,7 +18,7 @@
 
 ## 🧪 Get `SESSION_NAME` from below:
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@levinalab/StringSession#main.py) ``Pyrogram``
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@DeshaXBlacck/StringSession#main.py) ``Pyrogram``
 
 ## 🎭 Preview
 <p align="center">
@@ -90,7 +90,7 @@ python3 main.py # run the bot.
 
 # Credits 💖
 
-- [Levina](https://github.com/levina-lab) ``Dev``
+- [Desha](https://github.com/Desha-elfager) ``Dev``
 - [Zxce3](https://github.com/Zxce3) ``Dev``
 - [DoellBarr](https://github.com/DoellBarr) ``Dev``
 - [tofikdn](https://github.com/tofikdn) ``Dev``
