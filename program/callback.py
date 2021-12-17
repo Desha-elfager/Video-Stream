@@ -16,36 +16,36 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music and video on groups through the new Telegram's video chats!**
+        f"""✨ **مرحبا [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
+💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) يتيح لك تشغيل الموسيقى والفيديو في مجموعات من خلال محادثات الفيديو الجديدة في Telegram!**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+💡 **اكتشف جميع أوامر الروبوت وكيفية عملها من خلال النقر فوق  »  📚 زر الأوامر!**
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
+🔖 **لمعرفة كيفية استخدام هذا الروبوت ، الرجاء النقر فوق » ❓ زر الدليل الأساسي!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "اضغط لـ اضافتي لمجموعتك ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
+                [InlineKeyboardButton("❓ طريقة التفعيل", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("📚 الاوامر", callback_data="cbcmds"),
+                    InlineKeyboardButton("❤ المطور", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 جروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 قناة البوت", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🌐 مبرمج السورس", url="https://t.me/DeshaXBlacck"
                     )
                 ],
             ]
@@ -72,7 +72,7 @@ async def cbguides(_, query: CallbackQuery):
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
+            [[InlineKeyboardButton("🔙 الرجوع", callback_data="cbstart")]]
         ),
     )
 
@@ -88,12 +88,12 @@ async def cbcmds(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👷🏻 Admin Cmd", callback_data="cbadmin"),
-                    InlineKeyboardButton("🧙🏻 Sudo Cmd", callback_data="cbsudo"),
+                    InlineKeyboardButton("👷🏻 اوامر الادمن", callback_data="cbadmin"),
+                    InlineKeyboardButton("🧙🏻 اوامر المطور", callback_data="cbsudo"),
                 ],[
-                    InlineKeyboardButton("📚 Basic Cmd", callback_data="cbbasic")
+                    InlineKeyboardButton("📚 الاوامر الاساسيه", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")
+                    InlineKeyboardButton("🔙 الرجوع", callback_data="cbstart")
                 ],
             ]
         ),
@@ -120,7 +120,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 ⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 الرجوع", callback_data="cbcmds")]]
         ),
     )
 
@@ -143,7 +143,7 @@ async def cbadmin(_, query: CallbackQuery):
 
 ⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 الرجوع", callback_data="cbcmds")]]
         ),
     )
 
@@ -161,7 +161,7 @@ async def cbsudo(_, query: CallbackQuery):
 
 ⚡ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 الرجوع", callback_data="cbcmds")]]
         ),
     )
 
@@ -186,7 +186,7 @@ async def cbmenu(_, query: CallbackQuery):
                       InlineKeyboardButton("🔇", callback_data="cbmute"),
                       InlineKeyboardButton("🔊", callback_data="cbunmute"),
                   ],[
-                      InlineKeyboardButton("🗑 Close", callback_data="cls")],
+                      InlineKeyboardButton("🗑 حذف", callback_data="cls")],
                   ]
              ),
          )
