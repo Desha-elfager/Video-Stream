@@ -103,9 +103,9 @@ async def alive(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ مبرمج السورس يبني..😺♥", url=f"https://t.me/DeshaXBlacck"),
+                InlineKeyboardButton("✨ مبرمج السورس يبني..😺♥", url=f"https://t.me/MR_X_N"),
                 InlineKeyboardButton(
-                    "📣 قناة السورس", url=f"https://t.me/music_Desha1"
+                    "📣 قناة السورس", url=f"https://t.me/MR_X_N_1"
                 ),
             ]
         ]
@@ -142,7 +142,7 @@ async def get_uptime(client: Client, message: Message):
 
 @Client.on_message(filters.new_chat_members)
 async def new_chat(c: Client, m: Message):
-    ass_uname = (await user.get_me()).username
+    ass_uname  = (في انتظار  المستخدم . get_me ()). اسم االمستخدم
     bot_id = (await c.get_me()).id
     for member in m.new_chat_members:
         if member.id == bot_id:
@@ -153,8 +153,8 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 قناة السورس", url=f"https://t.me/music_Desha1"),
-                            InlineKeyboardButton("💭 البشمبرمج", url=f"https://t.me/DeshaXBlacck")
+                            InlineKeyboardButton ( "📣 قناة السورس" ، url = f "https://t.me/MR_X_N_1" )
+                            InlineKeyboardButton ( "💭 البشمبرمج" ، url = f "https://t.me/MR_X_N" )
                         ],
                         [
                             InlineKeyboardButton("👤 المساعد", url=f"https://t.me/{ass_uname}")
