@@ -70,7 +70,7 @@ async def cbguides(_, query: CallbackQuery):
 
 💡 **إذا كانت لديك أسئلة متابعة حول هذا الروبوت ، فيمكنك إخباره من خلال دردشة الدعم الخاصة بي هنا: @{music_Desha}**
 
-⚡ __قناة السورس {music_Desha1} A.I__""",
+⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 الرجوع", callback_data="cbstart")]]
         ),
@@ -84,7 +84,7 @@ async def cbcmds(_, query: CallbackQuery):
 
 » **اضغط على الزر أدناه لقراءة الشرح ومشاهدة قائمة الأوامر المتاحة !**
 
-⚡ __قناة السورس {music_Desha1} A.I__""",
+⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -118,7 +118,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /uptime - show the bot uptime status
 » /alive - show the bot alive info (in group)
 
-⚡️ __قناة السورس {music_Desha1} AI__""",
+⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 الرجوع", callback_data="cbcmds")]]
         ),
@@ -141,7 +141,7 @@ async def cbadmin(_, query: CallbackQuery):
 » /userbotjoin - invite the userbot to join group
 » /userbotleave - order userbot to leave from group
 
-⚡️ __قناة السورس {music_Desha1} AI__""",
+⚡️ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 الرجوع", callback_data="cbcmds")]]
         ),
@@ -159,7 +159,7 @@ async def cbsudo(_, query: CallbackQuery):
 » /restart - restart your bot
 » /leaveall - order userbot to leave from all group
 
-⚡ __قناة السورس {music_Desha1} AI__""",
+⚡ __Powered by {BOT_NAME} AI__""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 الرجوع", callback_data="cbcmds")]]
         ),
